@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>UI/UX Design</title>
+</head>
+<style>
+
+body{
+    background-color: black;
+}
+
+.navbar {
+            justify-content: center;
+        }
+        .navbar-brand,
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .navbar-brand {
+            margin-right: auto;
+        }
+        .navbar-logo {
+            margin-right: 20px; /* Adjust this value to move the logo further to the left */
+        }
+        .navbar-nav .nav-link {
+    color: #ffffff; 
+    transition: color 0.3s ease; 
+}
+
+    .navbar-nav .nav-link:hover {
+
+        border-bottom: 3px solid rgb(0, 255, 179);
+
+    }
+
+    .social-icon-container {
+            position: relative;
+            bottom: 26px;
+            width: 100%;
+            text-align: center;
+            z-index: 1000;
+        }
+        .social-icon {
+            font-size: 50px; 
+            margin: 0 10px; 
+            color: rgb(255, 252, 252);
+        }
+  
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h4{
+            animation: fadeInUp 3s ease-in-out infinite;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h4 {
+            color: wheat;
+            padding-bottom: 20px;
+            font-size: large;
+        }
+
+        h1{
+            color: rgb(0, 0, 0);
+            font-size: 50px;
+            text-align: center;
+            background-color:silver;
+        }
+
+    .gallery{
+        padding:80px 0px;
+    }
+    img{
+        max-width: 100%;
+    }
+    .gallery img{
+        background:#fff;
+        padding: 15px;
+        width: 100%;
+        cursor: pointer;
+
+    }
+    .gallery-popup .modal-img{
+        width: 100%;
+    }
+ 
+    
+   /* new */
+   .gallery {
+        padding: 80px 0px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .gallery img {
+        background: #fff;
+        padding: 15px;
+        width: 100%;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .gallery img:hover {
+        transform: scale(1.1); /* Increase the scale on hover */
+    }
+
+    /* Modal Styles */
+    .modal-body {
+        text-align: center;
+    }
+
+    .modal-img {
+        max-width: 100%;
+        height: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* Image zoom effect in modal */
+    .modal-img:hover {
+        transform: scale(1.1); /* Increase the scale on hover */
+    }
+
+
+    .download-cv a {
+            background: #212121;
+            padding: 10px 18px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+            display: inline-block;
+            margin: 30px 0;
+            
+            border-radius: 5px;
+        }
+
+       
+
+        .download-cv a.hire-me:hover {
+            background-color: rgb(7, 136, 97);
+            color: white;
+        }
+
+
+    
+</style>
+<body>
+
+   
+
+
+
+    <!-- nav bar -->
+    <div class="nav-hover">
+        <div class="container-fluid bg-dark">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid">
+                  <h4 class="name">Mohamed Fazlan</h4>
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects Skills
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="android1.html">Android Developing</a></li>
+                                <li><a class="dropdown-item" href="web.html">Web Developing</a></li>
+                                <li><a class="dropdown-item" href="iot.html">Internet Of Things</a></li>
+                                <li><a class="dropdown-item" href="netbean.html">Java Projects</a></li>
+                                <li><a class="dropdown-item" href="uxid.html">UI/UX Projects</a></li>
+
+
+
+                                
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="feedback_form.html" style="text-decoration: none;">Feedback</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="contact.html" style="text-decoration: none;">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="services.html" style="text-decoration: none;">Services</a>
+                        </li>
+                        </ul><!-- end of ul tag -->
+                    </div><!-- end of collapse -->
+                </div><!-- end of fluid -->
+            </nav><!-- end of nav -->
+        </div><!-- end of container fluid -->
+        </div>
+    <!-- end of nav bar -->
+
+
+
+
+        <!--start popup image  -->     
+
+    <section class="gallery min-vh-100">
+    <div class="container-lg">
+        <h1 class="heading">
+            UI/UX  Activities | <span class="skills">Skills</span>
+        </h1>
+        <hr>
+
+        
+        
+        <div class="row gy-4 row-cols-1 row-cols-sm-3 ">
+            <div class="col">
+                <div class="download-cv">
+                    <a href="movie_ticket_ui.html" class="hire-me" id="hireMeBtn">Click to View</a>
+                </div>
+                
+            <img src="images/app_design_moview.jfif" alt="Submarine" class="gallery-item" height="500px">
+        </div> 
+        
+        <div class="col">
+            <div class="download-cv">
+                <a href="flight_ticket_ui.html" class="hire-me" id="hireMeBtn">Click to View</a>
+            </div>
+            <img src="images/Welcome page.png" alt="Submarine" class="gallery-item" height="500px">
+        </div> 
+        <div class="col">
+            <div class="download-cv">
+                <a href="gym_ui.html" class="hire-me" id="hireMeBtn">Click to View</a>
+            </div>
+            <img src="images/website_homepage.png" alt="Submarine" class="gallery-item" height="500px">
+        </div> 
+    </div>
+ 
+  
+  </div>
+</section>
+<!-- Button trigger modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="gallery-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="images/" class="modal-img" alt="">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+<!-- javascript start -->
+ <script type="text/javascript">
+    document.addEventListener("click",function(e){
+        if(e.target.classList.contains("gallery-item")){
+            const src = e.target.getAttribute("src");
+            document.querySelector(".modal-img").src = src;
+            const myModal = new bootstrap
+            .Modal(document.getElementById('gallery-popup'));
+            myModal.show();
+        }
+    })
+    </script>
+  <!-- end of javascript -->
+    
+  <pre>
+
+
+
+  </pre>
+  
+  <!--footer part  -->
+  <footer class="bg-dark text-white pt-2 pb-1"> 
+  
+      <div class="container text-center text-md-left">
+    
+          <div class="row align-items-center">
+              
+              <div class="col-lg-6 col-md-6 col-xl-6 mx-auto mt-3 text-md-left">
+                  <h5 class="text-uppercase mb-4 font-weight-bold ">Contact <span style="color:rgb(2, 255, 179)"> Detail</span></h5>
+                  <p><li class="fas fa-home mr-3">306/17/8 Kandy, Road</li></p>
+                  <p><li class="fas fa-phone mr-3">+94 76 11 40481</li></p>
+                  <p><li class="fas fa-envelope mr-3">fazlanm244@gmail.com</li></p>
+              </div>
+              
+              <div class="col-lg-6 col-md-6 col-xl-6 text-md-right mt-3">
+                  <h4 style="font-size: 20px;">Find Me</h4>
+                  <div class="social-icon-container">
+                      <a href="https://www.instagram.com/easycodeworks?igsh=MTdpazM0MWN5ODljNw%3D%3D&utm_source=qr" target="_blank" class="social-icon"><i class='bx bxl-instagram'></i></a>
+                      <a href="https://www.linkedin.com/in/mohamed-fazlan45678/" target="_blank" class="social-icon"><i class='bx bxl-linkedin-square'></i></a>
+                  </div>
+                  <p class="my-name">® 2024 Sri Lanka. All Rights Reserved-Published by Mohamed Fazlan</p>
+              </div>
+      
+          </div> <!-- Close Row for organizing content --> 
+        </div> <!-- Close Container for footer content-->  
+  </footer> <!--end of footer-->
+
+<script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="icon" href="images/form-logo.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Feedback Form</title>
+    <style>
+         .navbar {
+            justify-content: center;
+        }
+        .navbar-brand,
+        .navbar-nav {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-nav {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .navbar-brand {
+            margin-right: auto;
+        }
+        .navbar-logo {
+            margin-right: 20px; /* Adjust this value to move the logo further to the left */
+        }
+
+        .navbar-nav .nav-link {
+    color: #ffffff; 
+    transition: color 0.3s ease; 
+}
+.social-icon-container {
+            position: relative;
+            bottom: 26px;
+            width: 100%;
+            text-align: center;
+            z-index: 1000;
+        }
+        .social-icon {
+            font-size: 50px; 
+            margin: 0 10px; 
+            color: rgb(255, 252, 252);
+        }
+    .navbar-nav .nav-link:hover {
+
+        border-bottom: 3px solid rgb(17, 100, 75);
+
+    }
+
+    h4 {
+            color: wheat;
+            padding-bottom: 20px;
+            font-size: large;
+        }
+
+
+    
+       
+    .box1 {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px; /* Increased padding */
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 255, 213, 0.5);
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+        width: 350px; /* Increased width */
+    }
+
+    .box1:hover {
+        box-shadow: 0 0 30px rgba(0, 255, 213, 0.8), 0 0 60px rgba(0, 255, 213, 0.4);
+        transform: scale(1.05);
+    }
+
+    .heading {
+        text-align: center;
+        margin-bottom: 20px; /* Increased bottom margin */
+    }
+
+    .text-white {
+        color: white;
+    }
+
+    textarea {
+        width: 100%;
+        height: 150px; /* Increased height */
+        padding: 15px; /* Increased padding */
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        box-shadow: inset 0 0 10px rgba(0, 255, 213, 0.5);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    textarea:focus {
+        box-shadow: inset 0 0 15px rgba(0, 255, 213, 0.8);
+    }
+
+    button {
+        background-color: aquamarine;
+        color: black;
+        padding: 12px 20px; /* Slightly increased padding */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    button:hover {
+        background-color: rgb(0, 255, 213);
+        transform: scale(1.05);
+    }
+    </style>
+</head>
+<body style="background-color: black;">
+
+
+
+    <div class="nav-hover">
+        <div class="container-fluid bg-dark">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid">
+                  <h4 class="name">Mohamed Fazlan</h4>
+                    <a class="navbar-brand" href="#"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Projects Skills
+                              </a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="android1.html">Android Developing</a></li>
+                                <li><a class="dropdown-item" href="web.html">Web Developing</a></li>
+                                <li><a class="dropdown-item" href="iot.html">Internet Of Things</a></li>
+                                <li><a class="dropdown-item" href="netbean.html">Java Projects</a></li>
+                                <li><a class="dropdown-item" href="uxid.html">UI/UX Projects</a></li>
+
+
+                                
+                              </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="feedback_form.html" style="text-decoration: none;">Feedback</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="contact.html" style="text-decoration: none;">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="services.html" style="text-decoration: none;">Services</a>
+                        </li>
+                        </ul><!-- end of ul tag -->
+                    </div><!-- end of collapse -->
+                </div><!-- end of fluid -->
+            </nav><!-- end of nav -->
+        </div><!-- end of container fluid -->
+        </div>
+        <!--END OF NAV BAR-->
+
+
+        
+        
+    
+        
+         
+            <!-- start form -->
+            <div class="image">
+                <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+                    <form name="form" class="box1" action="https://formsubmit.co/6b67e6715a4c1a4464d33b05faf8dfce" method="POST">
+                        <h4 class="heading"><span style="color:rgb(0, 255, 213);">Feedback <span style="color: aquamarine;">Form</span></h4>
+            
+                        <div class="mb-3 text-white">
+                            <label for="exampleInputEmail1" class="form-label">Feedback Box</label>
+                            <textarea name="feedback" id="feedback1" type="text" required="message-control" placeholder="Feedback"></textarea>
+                        </div>
+            
+                        <button type="submit" class="text-color">Send</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- end of form  -->
+            <pre>
+
+
+
+            </pre>
+            
+            <!--footer part  -->
+            <footer class="bg-dark text-white pt-2 pb-1"> 
+            
+                <div class="container text-center text-md-left">
+              
+                    <div class="row align-items-center">
+                        
+                        <div class="col-lg-6 col-md-6 col-xl-6 mx-auto mt-3 text-md-left">
+                            <h5 class="text-uppercase mb-4 font-weight-bold ">Contact <span style="color:rgb(2, 255, 179)"> Detail</span></h5>
+                            <p><li class="fas fa-home mr-3">306/17/8 Kandy, Road</li></p>
+                            <p><li class="fas fa-phone mr-3">+94 76 11 40481</li></p>
+                            <p><li class="fas fa-envelope mr-3">fazlanm244@gmail.com</li></p>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-xl-6 text-md-right mt-3">
+                            <h4 style="font-size: 20px;">Find Me</h4>
+                            <div class="social-icon-container">
+                                <a href="https://www.instagram.com/easycodeworks?igsh=MTdpazM0MWN5ODljNw%3D%3D&utm_source=qr" target="_blank" class="social-icon"><i class='bx bxl-instagram'></i></a>
+                                <a href="https://www.linkedin.com/in/mohamed-fazlan45678/" target="_blank" class="social-icon"><i class='bx bxl-linkedin-square'></i></a>
+                            </div>
+                            <p class="my-name">® 2024 Sri Lanka. All Rights Reserved-Published by Mohamed Fazlan</p>
+                        </div>
+                
+                    </div> <!-- Close Row for organizing content --> 
+                  </div> <!-- Close Container for footer content-->  
+            </footer> <!--end of footer-->
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+
+
+</body>
+</html>
